@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bday_app/start_screen.dart';
 
 void main() {
   runApp(
@@ -8,20 +9,14 @@ void main() {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Colors.lightGreen,
-                Colors.lime,
-                Colors.yellowAccent,
-                Colors.deepOrangeAccent,
-                Colors.redAccent,
-                Colors.blueAccent
+                Color.fromRGBO(131, 96, 195,0.8),
+                Color.fromRGBO(46, 191, 145,0.8)
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             ),
           ),
-          child: const Text(
-            "Hello !",
-          ),
+          child: const StartScreen(),
         ),
       ),
     ),
