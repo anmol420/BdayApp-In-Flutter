@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});
@@ -16,8 +17,13 @@ class StartScreen extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          const Text(
-            "Hello !",
+          Text(
+            "Click The Button Below\nTo Check The Wish !!",
+            textAlign: TextAlign.center,
+            style: GoogleFonts.roboto(
+              color: Colors.white,
+              fontSize: 24,
+            ),
           ),
           const SizedBox(
             height: 30,
