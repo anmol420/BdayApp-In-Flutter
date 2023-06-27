@@ -5,9 +5,30 @@ class StartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        "Hello !",
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Image.asset(
+            'assets/cake.png',
+            width: 200,
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          const Text(
+            "Hello !",
+          ),
+          const SizedBox(
+            height: 30,
+          ),
+          OutlinedButton(
+              onPressed: () {},
+              child: const Text(
+                "🎉",
+              ),
+          ),
+        ],
       ),
     );
   }
