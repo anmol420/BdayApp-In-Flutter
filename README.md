@@ -17,7 +17,7 @@
 
 <h1>Install App</h1>
 
-- [CLICK HERE](https://drive.google.com/file/d/1OzCgeu4GUS_bvRUywNov9N2rhFFPILk3/view?usp=sharing) To Install The App.
+- [CLICK HERE](https://drive.google.com/u/2/uc?id=1OzCgeu4GUS_bvRUywNov9N2rhFFPILk3&export=download) To Install The App.
 
 <h3>Developer</h3>
 
