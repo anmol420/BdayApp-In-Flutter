@@ -9,6 +9,7 @@
 <h1>How To Use</h1>
 
 - Scroll Down To `Install App` Section In Order To Get Access To The App.
+- Download The `APK File` From The Above Mentioned Section And Install The APK For Viewing The App.
 
 <h1>Packages Used</h1>
 
