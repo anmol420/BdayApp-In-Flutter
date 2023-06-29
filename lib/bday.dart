@@ -23,18 +23,34 @@ class _Bday extends State<Bday> {
     );
   }
 
+  void restart() {
+    setState(
+      () {
+        activeScreen = StartScreen(
+          switchScreen: switchScreen,
+        );
+      },
+    );
+  }
+
   void switchMessageScreen() {
-    setState(() {
-      activeScreen = const BdayMessage();
-    });
+    setState(
+      () {
+        activeScreen = BdayMessage(
+          restart,
+        );
+      },
+    );
   }
 
   void switchScreen() {
-    setState(() {
-      activeScreen = BdayScreen(
-        switchMessageScreen,
-      );
-    });
+    setState(
+      () {
+        activeScreen = BdayScreen(
+          switchMessageScreen,
+        );
+      },
+    );
   }
 
   @override
@@ -45,8 +61,8 @@ class _Bday extends State<Bday> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
               colors: [
-                Color.fromRGBO(131, 96, 195,0.8),
-                Color.fromRGBO(46, 191, 145,0.8)
+                Color.fromRGBO(131, 96, 195, 0.8),
+                Color.fromRGBO(46, 191, 145, 0.8)
               ],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BdayMessage extends StatefulWidget {
-  const BdayMessage({super.key});
+  const BdayMessage(this.restart, {super.key});
+
+  final void Function() restart;
 
   @override
   State<StatefulWidget> createState() {
@@ -20,7 +22,7 @@ class _BdayMessage extends State<BdayMessage> {
             'Hello',
           ),
           OutlinedButton.icon(
-            onPressed: () {},
+            onPressed: widget.restart,
             icon: const
             Icon(
               Icons.refresh_sharp,
