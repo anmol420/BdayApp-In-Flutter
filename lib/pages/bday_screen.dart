@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 
 class BdayScreen extends StatefulWidget {
-  const BdayScreen({super.key});
+  const BdayScreen(this.bdayMessageScreen, {super.key});
+
+  final void Function() bdayMessageScreen;
 
   @override
   State<StatefulWidget> createState() {
@@ -26,17 +28,20 @@ class _BdayScreen extends State<BdayScreen> {
             child: AnimatedTextKit(
               animatedTexts: [
                 FadeAnimatedText(
-                    "Happy Birthday 🎁",
+                  "Happy Birthday 🎁",
+                  textAlign: TextAlign.center,
                 ),
                 FadeAnimatedText(
-                    "May God Bless You ✨",
+                  "May God Bless You ✨",
+                  textAlign: TextAlign.center,
                 ),
                 FadeAnimatedText(
                   "Always Stay Happy & Creative 🥳",
                   textAlign: TextAlign.center,
                 ),
               ],
-              onTap: () {},
+              repeatForever: true,
+              onTap: widget.bdayMessageScreen,
             ),
           ),
         ],

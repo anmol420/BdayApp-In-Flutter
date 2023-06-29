@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bday_app/start_screen.dart';
 import 'package:bday_app/pages/bday_screen.dart';
+import 'package:bday_app/pages/bday_message.dart';
 
 class Bday extends StatefulWidget {
   const Bday({super.key});
@@ -22,9 +23,17 @@ class _Bday extends State<Bday> {
     );
   }
 
+  void switchMessageScreen() {
+    setState(() {
+      activeScreen = const BdayMessage();
+    });
+  }
+
   void switchScreen() {
     setState(() {
-      activeScreen = const BdayScreen();
+      activeScreen = BdayScreen(
+        switchMessageScreen,
+      );
     });
   }
 
