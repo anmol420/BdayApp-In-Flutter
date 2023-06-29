@@ -33,18 +33,15 @@ class _BdayMessage extends State<BdayMessage> {
           ),
           Image.asset(
             'assets/message.png',
+            width: 350,
           ),
           const SizedBox(
             height: 60,
           ),
-          OutlinedButton.icon(
+          OutlinedButton(
             onPressed: widget.restart,
-            icon: const
-            Icon(
-              Icons.refresh_sharp,
-            ),
-            label: const Text(
-              "",
+            child: const Text(
+              "🔄",
             ),
           ),
         ],
