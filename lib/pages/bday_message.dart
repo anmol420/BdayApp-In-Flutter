@@ -10,9 +10,27 @@ class BdayMessage extends StatefulWidget {
 }
 
 class _BdayMessage extends State<BdayMessage> {
-
   @override
   Widget build(BuildContext context) {
-    return const Text('Hello');
+    return Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Text(
+            'Hello',
+          ),
+          OutlinedButton.icon(
+            onPressed: () {},
+            icon: const
+            Icon(
+              Icons.refresh_sharp,
+            ),
+            label: const Text(
+              "",
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
